@@ -27,7 +27,7 @@ public class RunnerszApplication {
 	@Bean
 	CommandLineRunner runner() {
 		return args -> {
-			Run run = new Run(1, "Morning Run", LocalDateTime.now(), LocalDateTime.now().plus(30, ChronoUnit.MINUTES), Location.OUTDOORS);
+			Run run = new Run(1, "Morning Run", LocalDateTime.now(), LocalDateTime.now().plus(30, ChronoUnit.MINUTES), Location.OUTDOOR);
 			logger.info("Created run: {}", run);
 		};
 	}
